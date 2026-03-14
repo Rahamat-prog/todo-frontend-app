@@ -1,0 +1,25 @@
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 2fr;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.stat-num { font-size: 1.5rem; font-weight: 500; color: var(--text-primary); line-height: 1; margin-bottom: 0.25rem; }
+.stat-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.progress-card { display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; }
+
+.progress-label { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.progress-track { height: 6px; background: var(--progress-bg); border-radius: 10px; overflow: hidden; }
+
+.progress-fill { height: 100%; background: var(--accent); border-radius: 10px; transition: width 0.5s ease; }
